@@ -80,8 +80,8 @@ def deploy_flow(endpoint_name, deployment_name):
             properties=[ # this enables the chat interface in the endpoint test tab
                 ["azureml.promptflow.source_flow_id", "basic-chat"],
                 ["azureml.promptflow.mode", "chat"],
-                ["azureml.promptflow.chat_input", "chat_input"],
-                ["azureml.promptflow.chat_output", "reply"]
+                ["azureml.promptflow.chat_input", "question"],
+                ["azureml.promptflow.chat_output", "answer"]
             ]
         ),
         environment=Environment(
